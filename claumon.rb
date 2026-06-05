@@ -11,7 +11,7 @@ class Claumon < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/fabioconcina/claumon/releases/download/v0.13.1/claumon-darwin-amd64.tar.gz"
-      sha256 "25c44a6d156285ce421c5109c8f29d7f495dfa17b80a6a7edf864468e92094df"
+      sha256 "f6cff89cd0955f034eca91d15262e5d1aec7b8d887a3cde8abbcffcabd3cd5d1"
 
       define_method(:install) do
         bin.install "claumon"
@@ -19,7 +19,7 @@ class Claumon < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/fabioconcina/claumon/releases/download/v0.13.1/claumon-darwin-arm64.tar.gz"
-      sha256 "9625bff0dc257bd07b871bc117044406e84e3de8bf41afb0d240acdfe656313c"
+      sha256 "0c885f0e88f5f2af6e35e65e38927a8f9c00a1312f6f1a59e3ff3cabaecb9274"
 
       define_method(:install) do
         bin.install "claumon"
@@ -30,14 +30,14 @@ class Claumon < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/fabioconcina/claumon/releases/download/v0.13.1/claumon-linux-amd64.tar.gz"
-      sha256 "22e74f7efc7e9e40e454fb065a9c09762e2291b29772aea8d480db887d3c1b4c"
+      sha256 "4f96dd93e303146acdc881652a4df25da1ccd0b00781ae1e03e35b42a9f1960d"
       define_method(:install) do
         bin.install "claumon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/fabioconcina/claumon/releases/download/v0.13.1/claumon-linux-arm64.tar.gz"
-      sha256 "1cb1dd3235b567deb509f092a921accc6baad9fb19a3d0686f231d8b2936ec62"
+      sha256 "fba2deed91a4ba6c7eace003679f41ba06cadd45142002b5dc5311c615d9a574"
       define_method(:install) do
         bin.install "claumon"
       end
