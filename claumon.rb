@@ -5,21 +5,21 @@
 class Claumon < Formula
   desc "Real-time Claude Code dashboard — monitors API usage, token costs, sessions, and memory files"
   homepage "https://github.com/fabioconcina/claumon"
-  version "0.20.1"
+  version "0.21.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fabioconcina/claumon/releases/download/v0.20.1/claumon-darwin-amd64.tar.gz"
-      sha256 "95e1bd358783bc9b5dff27d880e644af0ffa2b4a6c838b7671c9eae1d2339188"
+      url "https://github.com/fabioconcina/claumon/releases/download/v0.21.0/claumon-darwin-amd64.tar.gz"
+      sha256 "d5ca14db4c2db84cbb1b78e1c7e0a39c3bfccd5f10c69f75226fe8f81409f0ec"
 
       define_method(:install) do
         bin.install "claumon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fabioconcina/claumon/releases/download/v0.20.1/claumon-darwin-arm64.tar.gz"
-      sha256 "65bc20a1697ef3d59c7c00fe4ac6c0d5435fc0631c4ac5bcd65b800325afea76"
+      url "https://github.com/fabioconcina/claumon/releases/download/v0.21.0/claumon-darwin-arm64.tar.gz"
+      sha256 "21c0e5c0a7ddc8de3d38c5f85494f330efdc5778c6e0decaab1cf14f8962752b"
 
       define_method(:install) do
         bin.install "claumon"
@@ -29,15 +29,15 @@ class Claumon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fabioconcina/claumon/releases/download/v0.20.1/claumon-linux-amd64.tar.gz"
-      sha256 "484e00075e0e0155013d1be8473286d5b26321ed3d229990d544b362ed3227e3"
+      url "https://github.com/fabioconcina/claumon/releases/download/v0.21.0/claumon-linux-amd64.tar.gz"
+      sha256 "aefbcf4adbe2bd9875d0fec768a6d48978e028413d1605e432463f6b6b968af0"
       define_method(:install) do
         bin.install "claumon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fabioconcina/claumon/releases/download/v0.20.1/claumon-linux-arm64.tar.gz"
-      sha256 "386846ce21dd80f4d47bc3b8d0c5bb658a64b21f756c89913f80077e13d42491"
+      url "https://github.com/fabioconcina/claumon/releases/download/v0.21.0/claumon-linux-arm64.tar.gz"
+      sha256 "6667db3dd65a179efee86b82db4bc953d346c5de6ec3adb80c992090da6f584f"
       define_method(:install) do
         bin.install "claumon"
       end
